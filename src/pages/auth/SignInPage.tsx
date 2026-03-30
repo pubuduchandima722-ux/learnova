@@ -8,7 +8,7 @@ import { Divider } from '../../components/common/Divider/Divider';
 import { useAuth } from '../../features/auth/useAuth';
 import styles from './SignInPage.module.css';
 
-const AUTH_IMAGE = 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=1200&fit=crop';
+const AUTH_IMAGE = 'https://plus.unsplash.com/premium_photo-1681681061645-7bb487c83d06?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 const INSTRUCTOR_CREDS = { email: 'instructor@learnova.app', password: 'Instructor123!' };
 
 export function SignInPage() {
