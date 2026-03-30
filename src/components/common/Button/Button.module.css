@@ -1,0 +1,83 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+  white-space: nowrap;
+  min-height: 40px;
+  letter-spacing: 0;
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.sm {
+  padding: 8px 16px;
+  font-size: 12px;
+  min-height: 34px;
+}
+
+.md {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+.lg {
+  padding: 12px 32px;
+  font-size: 16px;
+}
+
+/* Variants */
+.primary {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+.primary:hover:not(:disabled) {
+  background-color: #2a2a2a;
+}
+
+.secondary {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #e5e5e5;
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.ghost {
+  background-color: transparent;
+  color: #1a1a1a;
+  border-color: #e5e5e5;
+}
+
+.ghost:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.accent {
+  background-color: #c8e972;
+  color: #1a1a1a;
+  border-color: #c8e972;
+}
+
+.accent:hover:not(:disabled) {
+  background-color: #b8d960;
+}
+
+/* Full width */
+.fullWidth {
+  width: 100%;
+}

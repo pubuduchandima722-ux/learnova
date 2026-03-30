@@ -1,0 +1,38 @@
+.control {
+  display: inline-flex;
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.segment {
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #a0a0a0;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 34px;
+  white-space: nowrap;
+}
+
+.segment.active {
+  color: #1a1a1a;
+  font-weight: 500;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.segment:not(.active):hover {
+  color: #6b6b6b;
+}
+
+.segment:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

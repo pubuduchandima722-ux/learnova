@@ -1,0 +1,320 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+  min-height: calc(100vh - 64px - 40px);
+}
+
+/* Welcome Card */
+.welcome {
+  background-color: #E8FBCE;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 235px;
+  justify-content: space-between;
+  outline: 1px solid #DFF8BE;
+}
+
+.welcomeHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.welcomeGreeting {
+  font-size: 14px;
+  color: rgba(0,0,0,0.45);
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.welcomeName {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #414141;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.activeBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #60A500;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.activeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #60A500;
+  flex-shrink: 0;
+}
+
+/* Metric Cards inside welcome */
+.metrics {
+  display: grid;
+  grid-template-columns: 3fr 3fr 5fr;
+  gap: 12px;
+}
+
+.metricCard {
+  background-color: #CFFF8D;
+  border-radius: 8px;
+  padding: 12px 14px;
+  position: relative;
+  min-height: 100px;
+}
+
+.metricIcon {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  color: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+}
+
+.metricLabel {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.45);
+  white-space: nowrap;
+}
+
+.metricValue {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Continue Section */
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #414141;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.subtitleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.sectionSubtitle {
+  font-size: 14px;
+  color: #a0a0a0;
+  line-height: 1.75;
+  flex: 1;
+}
+
+.exploreLink {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #a0a0a0;
+  cursor: pointer;
+  flex-shrink: 0;
+  padding-top: 2px;
+  transition: color 200ms;
+  white-space: nowrap;
+}
+
+.exploreLink:hover {
+  color: #414141;
+}
+
+
+.courseGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+/* Schedule Rail */
+.scheduleRail {
+  background-color: #FBFBFB;
+  border-radius: 12px;
+  border: 1px solid #E5E5E5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: stretch;
+  height: 100%;
+}
+
+.scheduleHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.scheduleTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #414141;
+  line-height: 1.2;
+}
+
+.scheduleSub {
+  font-size: 12px;
+  color: #a0a0a0;
+  margin-top: 2px;
+}
+
+.calendarIcon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weekDays {
+  display: flex;
+  gap: 4px;
+}
+
+.dayChip {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #e5e5e5;
+  background-color: #f7f7f7;
+}
+
+.dayChip:hover {
+  background-color: #efefef;
+}
+
+.dayChip.active {
+  background-color: #e8fbce;
+  border-color: #d2e6b7;
+}
+
+.dayName {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a0a0a0;
+  line-height: 1.4;
+}
+
+.dayChip.active .dayName {
+  color: #414141;
+  font-weight: 500;
+}
+
+.dayNumber {
+  font-size: 20px;
+  font-weight: 400;
+  color: #a0a0a0;
+  line-height: 1;
+}
+
+.dayChip.active .dayNumber {
+  color: #414141;
+  font-weight: 500;
+}
+
+.scheduleList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.emptyDay {
+  font-size: 14px;
+  color: #a0a0a0;
+  text-align: center;
+  padding: 32px 0;
+}
+
+@media (min-width: 768px) {
+  .courseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .layout {
+    grid-template-columns: 1fr 366px;
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  .courseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .welcomeName {
+    font-size: 1.4rem;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+  }
+
+  .metricValue {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .welcomeName {
+    font-size: 1.25rem;
+  }
+
+  .sectionTitle {
+    font-size: 18px;
+  }
+
+  .metricValue {
+    font-size: 1.75rem;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .weekDays {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,360 @@
+.layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* ── LEFT MAIN COLUMN ── */
+.main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Welcome Card */
+.welcome {
+  background-color: #e8fbce;
+  border-radius: 16px;
+  outline: 1px solid #dff7be;
+  outline-offset: -1px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.welcomeTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.welcomeGreeting {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.welcomeName {
+  font-size: 28px;
+  font-weight: 500;
+  color: #414141;
+  line-height: 1.2;
+}
+
+.activeBadge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #60a500;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.activeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #60a500;
+  flex-shrink: 0;
+}
+
+/* Metric Cards — same layout as student dashboard */
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.metricCard {
+  background-color: #ceff8c;
+  border-radius: 12px;
+  padding: 12px;
+  position: relative;
+  min-height: 115px;
+}
+
+.metricIcon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+}
+
+.metricLabel {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+  white-space: nowrap;
+}
+
+.metricValue {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 44px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Enrollments */
+.enrollmentsSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 500;
+  color: #414141;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.sectionSub {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9a9a9a;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.enrollmentList {
+  background-color: #f7f7f7;
+  border-radius: 22px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.enrollmentItem {
+  background-color: #ffffff;
+  border-radius: 12px;
+  outline: 1px solid #e5e5e5;
+  outline-offset: -1px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.enrollmentIcon {
+  width: 64px;
+  height: 64px;
+  padding: 10px;
+  background-color: #e8fbce;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.enrollmentContent {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.enrollmentTitleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.enrollmentTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.25;
+  flex: 1;
+  min-width: 0;
+}
+
+.enrollmentMetaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.enrollmentId {
+  font-size: 10px;
+  font-weight: 400;
+  color: #9a9a9a;
+}
+
+.enrollmentDate {
+  font-size: 10px;
+  font-weight: 400;
+  color: #9a9a9a;
+}
+
+/* ── RIGHT RAIL ── */
+.rail {
+  flex-shrink: 0;
+  width: 360px;
+}
+
+.quickActions {
+  background-color: #fbfbfb;
+  border-radius: 12px;
+  outline: 1px solid #e5e5e5;
+  outline-offset: -1px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.railTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #414141;
+  line-height: 1.2;
+}
+
+.actionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.actionBtn {
+  height: 64px;
+  padding: 0 10px;
+  background-color: #ffffff;
+  border: none;
+  outline: 1px solid #e5e5e5;
+  outline-offset: -1px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #414141;
+  white-space: nowrap;
+  transition: background-color 0.15s;
+}
+
+.actionBtn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.actionBtn:hover {
+  background-color: #f3f3f3;
+}
+
+.createBtn {
+  height: 64px;
+  width: 100%;
+  padding: 0 20px;
+  background-color: #1d1d1d;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  white-space: nowrap;
+  transition: background-color 0.15s;
+}
+
+.createBtn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.createBtn:hover {
+  background-color: #333333;
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .layout {
+    align-items: flex-start;
+  }
+}
+
+/* Tablet: stack layout */
+@media (max-width: 1279px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .rail {
+    width: 100%;
+  }
+
+  .actionsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .welcomeName {
+    font-size: 22px;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .metricCard {
+    min-height: 90px;
+  }
+
+  .metricValue {
+    font-size: 32px;
+  }
+
+  .sectionTitle {
+    font-size: 22px;
+  }
+
+  .actionsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 479px) {
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .actionsGrid {
+    grid-template-columns: 1fr;
+  }
+}

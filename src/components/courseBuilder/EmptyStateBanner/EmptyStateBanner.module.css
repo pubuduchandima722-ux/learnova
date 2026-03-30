@@ -1,0 +1,28 @@
+.banner {
+  background-color: #fef9c3;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.icon {
+  color: #f59e0b;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.description {
+  font-size: 14px;
+  color: #6b6b6b;
+  max-width: 400px;
+}
